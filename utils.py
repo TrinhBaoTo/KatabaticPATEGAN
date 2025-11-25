@@ -13,7 +13,6 @@ def load_and_clean_data(file_path):
 def is_numerical(col):
     return pd.api.types.is_numeric_dtype(col) and not pd.api.types.is_bool_dtype(col)
 
-
 def discretize_numerical_columns(df, n_bins=10, strategy='uniform'):
     df_copy = df.copy()
 
